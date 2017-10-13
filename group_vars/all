@@ -1,0 +1,18 @@
+---
+aws_access_key: "SUA CHAVE DE ACESSO AWS"
+aws_secret_key: "SUA CHAVE SECRETA AWS"
+
+application: "wordpress" 
+target_env: "prod"
+aws_region: "us-east-1"
+aws_region_short: "ue1"
+aws_region_az: "c"
+vpc_name: "vpc-{{ aws_region_short }}-{{ target_env }}-{{ application }}"
+vpc_cidr_block: "172.27.0.0/16"
+public_subnet_1_cidr: "172.27.0.0/18"
+public_subnet_2_cidr: "172.27.64.0/18"
+private_subnet_1_cidr: "172.27.128.0/18"
+private_subnet_2_cidr: "172.27.192.0/18"
+keypair_name: "aluno-key"
+
+ssh_pubkey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAAB+wCl1phUvoLcM4qFPcF355gxbK7ANB4m0Xd2DJnkqCRjGv/g3MT9nxd3PMMWDWMHCNJ7nDio5TqiWK/iNJCuynN0gxWRZKVx+fg3i1ZYnmUq6mnNdU+RSNteoWFdKypqFh67yZx6pZ2FJhLP7nKYDykOA+sWTpoEq54Qn9c+AslOZUdoJExx6tkHEYhGpybsQkfmQeK/jftlH+4QjMIJekuZ4ffCJWBz/mBUIb2TRxPSySCProB8BOxwNtp5hLlyZBec3h5lO/HUwRIbk2FZxtxfe84MnzjDPVQ5djfytalO/gSs3Ls4DCETKzOJW8WALA7lCf2bPs91FBMmoqQ4w0oJO0HxzyKGNF16qMZt/lfJVFlsqr7tVJhTPi78oG5raK1j0tXmrRWfpuTv+TutZlXcdWqgIPrZ63qDbNi4ALQJAumpZ79B0UXAJx86tugxnlgp0u8DFahKcpD1T6k9Q2S2TFZJoqBf4qElmIaqsY+X+yg7/lkVfz9SFv6uQARbhup15VKkAe+cTy+chH3zU3iX8kjfkaLwWZw8aAQ7Lm3fANcdW+tpMiF6xCF3kGSH6fqsFJsrhvQagRvvWshVgjhpzSCGWqkN64oiYKhWbrtdsudZ837nbUGfsRmrJMi4TynK+0RJ9/fICI6hXKa9RdUuoIqItfXLF4EVuQ== root@192.168.88.134'
